@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="description" content="description">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>BeCode Festival 2021</title>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <p>3-4 JULY</p>
+        <p>BECODE FESTIVAL</p>
+        <p>WARANDEPARK BRUSSEL</p><br>
+    </div>
+
+    <div class="slideshow-container">
+        <img src="pics/1.jpg" style="width:100%" id="picture" alt="partypics">
+        <button id="previous">previous</button>
+        <button id="next">next</button>
+    </div>
+</header>
+
+<div class="grid-container">
+    <section>
+        <div class="tab">
+            <div class="tablinks-container">
+                <p class="tablinks">Summary</p>
+                <p class="tablinks">Practical Info</p>
+                <p class="tablinks">Contact Form</p>
+            </div>
+
+            <div class="tabcontent" id="summary">
+                <section>
+                    BeCode is Belgium’s first coding and music festival: 2 days and 2 stages, with the biggest headliners,
+                    young talents, raging rockers, incredible singer-songwriters, new names, and the coolest beats around.<br>
+
+                    <br>In 2021, BeCode Festival will take place between Saterday 3 July and Sunday 4 July.<br>
+
+                    The combination of coding workshops, hackathons and world-class music makes BeCode Festival a unique
+                    experience!<br> <br>
+                </section>
+
+                <table>
+                    <span id="lineup">Line up</span>
+                    <span id="Saterday"></span><li>Saturday 3 July:<br>
+
+                    10:00 - 12:00 Coding workshops<br>
+                    12:00 - 13:00 break<br>
+                    13:00 - 15:00 Hackathons<br>
+                    15:00 - 16:00 break<br>
+                </li>
+                    <li>
+                        Line up Stage Lamar<br>
+                        16:00 - 18:00 David Guetta<br>
+                        18:00 - 19:00 break<br>
+                        19:00 - 21:00 DJ set David Guetta<br>
+                        21:30 - 01:00 DJ set Daft Punk<br>
+                    </li>
+                    <li>
+                        Line up Stage Giertz<br>
+                        16:00 - 18:00 Coely<br>
+                        18:00 - 19:00 break<br>
+                        19:00 - 21:00 Zwangere Guy<br>
+                        21:30 - 24:00 DJ set Stromae<br>
+                    </li>
+
+                    <li> <span id="Sonday"></span>Sunday 4 July:<br>
+
+                        10:00 - 12:00 Gaming workshops<br>
+                        12:00 - 13:00 break<br>
+                        13:00 - 15:00 Hackatons<br>
+                        15:00 - 16:00 break<br>
+                    </li>
+                    <li>
+                        Line up Stage Lamar<br>
+                        16:00 - 18:00 DJ set Martin Garrix<br>
+                        18:00 - 19:00 break<br>
+                        19:00 - 21:00 DJ set Calvin Harris<br>
+                        21:30 - 01:00 DJ set Tiësto<br>
+                    </li>
+                    <li>
+                        Line up Stage Giertz<br>
+                        16:00 - 18:00 Woodie Smalls<br>
+                        18:00 - 19:00 break<br>
+                        19:00 - 21:00 SoulTrash<br>
+                        21:30 - 24:00 Black Acid<br>
+                    </li>
+                    </ul>
+                </table>
+            </div>
+            <div class="tabcontent" id="practicalinfo">
+                <ol>
+                    <li>How to get there? <br>The BeCode festival is centrally located in the Warandepark in Brussels (Belgium).
+                        <br>Public transport or traveling by bike are the most practical and convenient ways of getting to BeCode Festival.
+                        <br>By train: Your festival ticket includes 1 free and personal train ticket for a return journey in 2nd class from a Belgian departure station to BeCode festival.
+                    </li>
+                    <li>Tickets:
+                        Visit www.becode-festival.com
+                    </li>
+                    <li>Prices incl. transport:
+                    <ul>Per ticket/day: 30 euro</ul>
+                    <ul>Combi tickets: 50 euro</ul>
+                    </li>
+                    <li>
+                        Security:<br>
+                        Lockers will be available to store your laptop
+                    </li>
+                    <ul>
+                </ol>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.22960795441!2d4.362001415348436!3d50.84543227953182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4817a18b9f1%3A0xcedfc0133de66825!2sWarandepark!5e0!3m2!1snl!2sbe!4v1597223471813!5m2!1snl!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <div class="tabcontent" id="contactform">
+                <form id="contact" action="mailto:example@example.com">
+                    <h3>Contact us!</h3>
+                    <label><input type="text" placeholder="FirstName" id="firstname"></label>
+                    <label><input type="text" placeholder="LastName" id="lastname"></label><br>
+                    <label><textarea id="feedback" name="subject" placeholder="Feedback"></textarea></label><br>
+                    <button id="submit" disabled>Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<section>
+
+<div class="countdown">
+        <p><br>Countdown!</p>
+        <p id="remainingdays" data-remainingday="20"></p>
+        <p>Tickets sold</p>
+    <p id="visitors" data-visitors="1000"></p> </div>
+</section>
+
+</div>
+
+<footer>
+    <p class="footer">&copy; Copyright 2020 BeCode</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
